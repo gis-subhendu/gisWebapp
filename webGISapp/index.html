@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo GIS Web App</title>
+    <!-- Adding Bootstrap v5.2 Style Sheet -->
+    <link rel="stylesheet" href="./dist/bootstrap.min.css">
+    <!-- Adding Style Sheet -->
+    <link rel="stylesheet" href="./dist/style.css">
+    <!-- Adding Leaflet Style Sheet -->
+    <link rel="stylesheet" href="./dist/leaflet/leaflet.css">
+    <!-- Adding Leaflet measurement control Style Sheet -->
+    <link rel="stylesheet" href="./css/leaflet-measure.css">
+
+</head>
+
+<body>
+    <!-- div Containing Map => id = map -->
+    <div id="map"></div>
+        
+        <!-- Adding button for full screen map view     -->
+        <button onclick = fullScreenMap()>Full Screen</button>
+        <!-- Adding div for display mouse co-ordinate -->
+        <div id="mouseCoordinate"></div>
+        <!-- Adding div for display Zoom Level -->
+        <div id="zoomLevel" class="zoom-level">Zoom Level: </div>
+        <!-- Adding div for geocoding search -->
+        <div id="searchContainer" class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by location name or coordinates">
+            <div id="clearButton" class="clear-button">&times;</div>
+            <div id="suggestionContainer" class="suggestion-container">
+              <ul id="suggestionList" class="suggestion-list"></ul>
+            </div>
+            <button id="searchButton" class="search-button">Search</button>
+        </div>
+
+
+
+</body>
+
+</html>
+
+<!-- Adding Bootstrap v5.2 javascript link -->
+<script src="./dist/bootstrap.min.js"></script>
+<!-- Adding Leaflet javascript link -->
+<script src="./dist/leaflet/leaflet.js"></script>
+
+<!-- Adding jQuery javascript link -->
+<script src="./dist/jquery-3.7.0-compress.js"></script>
+
+<!-- Scripts for Map function  -->
+<script src="./dist/map-content.js"></script>
+

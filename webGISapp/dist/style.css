@@ -1,0 +1,62 @@
+/* Base map styling properties */
+#map{
+    width: 100%;
+    height: 800px;
+}
+/* Zoom Level Styling Properties */
+.zoom-level {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+
+/* Geocoding Search box Styleing properties */
+  .search-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+  }
+  
+  .search-container input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    padding-right: 25px; /* Add space for the clear button */
+  }
+  
+  .clear-button {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+  }
+  
+  .suggestion-container {
+    max-height: 120px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .suggestion-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .suggestion-list li {
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .suggestion-list li:hover {
+    background-color: #eee;
+  }
+  
+

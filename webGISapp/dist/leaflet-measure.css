@@ -1,0 +1,17 @@
+
+/* Style for Polyline draw button */
+#polylineDrawButton {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/* Style for Polyline Measurement result div */
+.measure-Result {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 5px;
+  }
+
+
